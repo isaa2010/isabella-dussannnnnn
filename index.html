@@ -1,0 +1,154 @@
+ChatGPT Plus
+Aquí tienes un archivo index.html sencillo sobre animales con un diseño atractivo usando solo HTML y CSS.
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Animal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        nav {
+            background: #256d46;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url("https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=1200&q=80") center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            text-shadow: 2px 2px 6px black;
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .tarjetas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .tarjeta {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 10px rgba(0,0,0,.2);
+            transition: transform .3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-8px);
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .tarjeta h3 {
+            padding: 15px;
+            color: #2e8b57;
+        }
+
+        .tarjeta p {
+            padding: 0 15px 20px;
+        }
+
+        footer {
+            background: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🐾 Mundo Animal</h1>
+    <p>Descubre la belleza y diversidad del reino animal.</p>
+</header>
+
+<nav>
+    <a href="#mamiferos">Mamíferos</a>
+    <a href="#aves">Aves</a>
+    <a href="#marinos">Marinos</a>
+</nav>
+
+<section class="hero">
+    <h2>Explora el Reino Animal</h2>
+    <p>Conoce algunas de las especies más fascinantes del planeta.</p>
+</section>
+
+<div class="contenedor">
+    <div class="tarjetas">
+
+        <div class="tarjeta" id="mamiferos">
+            <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=600&q=80" alt="León">
+            <h3>🦁 León</h3>
+            <p>El león es conocido como el rey de la selva por su fuerza, liderazgo y majestuosa melena.</p>
+        </div>
+
+        <div class="tarjeta" id="aves">
+            <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=600&q=80" alt="Águila">
+            <h3>🦅 Águila</h3>
+            <p>Las águilas destacan por su extraordinaria visión y su capacidad para volar a grandes alturas.</p>
+        </div>
+
+        <div class="tarjeta" id="marinos">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="Delfín">
+            <h3>🐬 Delfín</h3>
+            <p>Los delfines son mamíferos marinos muy inteligentes y conocidos por su comportamiento social.</p>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Mundo Animal | Proyecto HTML y CSS</p>
+</footer>
+
+</body>
+</html>
