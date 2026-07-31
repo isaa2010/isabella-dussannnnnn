@@ -1,309 +1,50 @@
-ChatGPT Plus
-Sí. Puedes hacerla mucho más completa agregando secciones, una galería, datos curiosos, una tabla, un formulario de contacto y un diseño más moderno. Aquí tienes un ejemplo de un index.html más elaborado:
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mundo Animal</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#eef7ee;
-    color:#333;
-}
-
-header{
-    background:#2E8B57;
-    color:white;
-    padding:30px;
-    text-align:center;
-}
-
-nav{
-    background:#206040;
-    padding:15px;
-    text-align:center;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:15px;
-    font-weight:bold;
-}
-
-nav a:hover{
-    color:yellow;
-}
-
-.hero{
-    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
-    url("https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=1200");
-    background-size:cover;
-    background-position:center;
-    color:white;
-    text-align:center;
-    padding:100px 20px;
-}
-
-.hero h2{
-    font-size:45px;
-}
-
-.hero p{
-    margin-top:15px;
-    font-size:20px;
-}
-
-section{
-    padding:40px;
-}
-
-h2{
-    text-align:center;
-    color:#2E8B57;
-    margin-bottom:20px;
-}
-
-.tarjetas{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-}
-
-.tarjeta{
-    width:300px;
-    background:white;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
-    transition:.3s;
-}
-
-.tarjeta:hover{
-    transform:translateY(-10px);
-}
-
-.tarjeta img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-}
-
-.tarjeta h3{
-    padding:15px;
-    color:#2E8B57;
-}
-
-.tarjeta p{
-    padding:0 15px 20px;
-}
-
-table{
-    width:90%;
-    margin:auto;
-    border-collapse:collapse;
-}
-
-table th,table td{
-    border:1px solid #999;
-    padding:12px;
-    text-align:center;
-}
-
-table th{
-    background:#2E8B57;
-    color:white;
-}
-
-.curiosidades{
-    width:80%;
-    margin:auto;
-}
-
-.curiosidades li{
-    margin:12px 0;
-}
-
-form{
-    width:60%;
-    margin:auto;
-}
-
-input,textarea{
-    width:100%;
-    padding:10px;
-    margin:10px 0;
-}
-
-button{
-    background:#2E8B57;
-    color:white;
-    border:none;
-    padding:12px 25px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#206040;
-}
-
-footer{
-    background:#2E8B57;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:30px;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <title>Perritos Pequeños</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
 <header>
-<h1>🌍 Mundo Animal 🦁</h1>
-<p>Descubre la increíble biodiversidad de nuestro planeta.</p>
+    <h1>Perritos Pequeños</h1>
+    <p>El amor por nuestros mejores amigos.</p>
 </header>
 
 <nav>
-<a href="#inicio">Inicio</a>
-<a href="#animales">Animales</a>
-<a href="#tabla">Información</a>
-<a href="#curiosidades">Curiosidades</a>
-<a href="#contacto">Contacto</a>
+    <a href="#">Inicio</a>
+    <a href="#">Razas</a>
+    <a href="#">Cuidados</a>
 </nav>
 
-<section class="hero" id="inicio">
-<h2>Bienvenido al Reino Animal</h2>
-<p>Más de 8 millones de especies habitan la Tierra.</p>
-</section>
+<main>
+    <section>
+        <h2>¿Por qué los amamos?</h2>
+        <p>Los perritos pequeños son cariñosos, juguetones y siempre alegran nuestros días con su compañía.</p>
+        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=500" alt="Perrito pequeño">
+    </section>
 
-<section id="animales">
+    <section>
+        <h2>Algunas razas</h2>
+        <ul>
+            <li>Chihuahua</li>
+            <li>Pomerania</li>
+            <li>Yorkshire Terrier</li>
+            <li>Pug</li>
+        </ul>
+    </section>
 
-<h2>Animales Destacados</h2>
-
-<div class="tarjetas">
-
-<div class="tarjeta">
-<img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=600">
-<h3>🦁 León</h3>
-<p>Conocido como el rey de la selva por su fuerza y liderazgo.</p>
-</div>
-
-<div class="tarjeta">
-<img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=600">
-<h3>🐘 Elefante</h3>
-<p>Es el mamífero terrestre más grande del mundo.</p>
-</div>
-
-<div class="tarjeta">
-<img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=600">
-<h3>🐺 Lobo</h3>
-<p>Animal muy inteligente que vive y caza en manada.</p>
-</div>
-
-<div class="tarjeta">
-<img src="https://images.unsplash.com/photo-1501706362039-c6e80948bb13?w=600">
-<h3>🦅 Águila</h3>
-<p>Posee una vista extraordinaria y puede detectar presas a kilómetros.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="tabla">
-
-<h2>Clasificación de Animales</h2>
-
-<table>
-
-<tr>
-<th>Animal</th>
-<th>Tipo</th>
-<th>Hábitat</th>
-<th>Alimentación</th>
-</tr>
-
-<tr>
-<td>León</td>
-<td>Mamífero</td>
-<td>Sabana</td>
-<td>Carnívoro</td>
-</tr>
-
-<tr>
-<td>Elefante</td>
-<td>Mamífero</td>
-<td>África y Asia</td>
-<td>Herbívoro</td>
-</tr>
-
-<tr>
-<td>Águila</td>
-<td>Ave</td>
-<td>Montañas</td>
-<td>Carnívoro</td>
-</tr>
-
-<tr>
-<td>Lobo</td>
-<td>Mamífero</td>
-<td>Bosques</td>
-<td>Carnívoro</td>
-</tr>
-
-</table>
-
-</section>
-
-<section id="curiosidades">
-
-<h2>📚 Curiosidades</h2>
-
-<ul class="curiosidades">
-<li>🐬 Los delfines tienen nombres propios para identificarse.</li>
-<li>🦒 La jirafa posee el cuello más largo entre los mamíferos.</li>
-<li>🐙 Los pulpos tienen tres corazones.</li>
-<li>🦉 Los búhos pueden girar su cabeza hasta 270°.</li>
-<li>🐧 Los pingüinos forman parejas durante la época reproductiva.</li>
-</ul>
-
-</section>
-
-<section id="contacto">
-
-<h2>Contáctanos</h2>
-
-<form>
-
-<input type="text" placeholder="Nombre">
-
-<input type="email" placeholder="Correo electrónico">
-
-<textarea rows="5" placeholder="Escribe tu mensaje"></textarea>
-
-<button>Enviar</button>
-
-</form>
-
-</section>
+    <section>
+        <h2>Cuidados básicos</h2>
+        <p>Bríndales buena alimentación, agua, ejercicio, visitas al veterinario y mucho cariño.</p>
+    </section>
+</main>
 
 <footer>
-
-<p>© 2026 Mundo Animal | Proyecto realizado con HTML y CSS.</p>
-
+    <p>Hecho con ❤️ para los amantes de los perritos.</p>
 </footer>
 
 </body>
 </html>
+
