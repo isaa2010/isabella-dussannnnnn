@@ -1,153 +1,308 @@
 ChatGPT Plus
-Aquí tienes un archivo index.html sencillo sobre animales con un diseño atractivo usando solo HTML y CSS.
+Sí. Puedes hacerla mucho más completa agregando secciones, una galería, datos curiosos, una tabla, un formulario de contacto y un diseño más moderno. Aquí tienes un ejemplo de un index.html más elaborado:
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo Animal</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mundo Animal</title>
 
-        body {
-            background: #f4f4f4;
-            color: #333;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        header {
-            background: #2e8b57;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#eef7ee;
+    color:#333;
+}
 
-        nav {
-            background: #256d46;
-            padding: 15px;
-            text-align: center;
-        }
+header{
+    background:#2E8B57;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+nav{
+    background:#206040;
+    padding:15px;
+    text-align:center;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
 
-        .hero {
-            background: url("https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=1200&q=80") center/cover;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
+nav a:hover{
+    color:yellow;
+}
 
-        .hero h2 {
-            font-size: 3em;
-            text-shadow: 2px 2px 6px black;
-        }
+.hero{
+    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+    url("https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=1200");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
 
-        .contenedor {
-            width: 90%;
-            max-width: 1100px;
-            margin: 40px auto;
-        }
+.hero h2{
+    font-size:45px;
+}
 
-        .tarjetas {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+}
 
-        .tarjeta {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 10px rgba(0,0,0,.2);
-            transition: transform .3s;
-        }
+section{
+    padding:40px;
+}
 
-        .tarjeta:hover {
-            transform: translateY(-8px);
-        }
+h2{
+    text-align:center;
+    color:#2E8B57;
+    margin-bottom:20px;
+}
 
-        .tarjeta img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
+.tarjetas{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
 
-        .tarjeta h3 {
-            padding: 15px;
-            color: #2e8b57;
-        }
+.tarjeta{
+    width:300px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
 
-        .tarjeta p {
-            padding: 0 15px 20px;
-        }
+.tarjeta:hover{
+    transform:translateY(-10px);
+}
 
-        footer {
-            background: #2e8b57;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-    </style>
+.tarjeta img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.tarjeta h3{
+    padding:15px;
+    color:#2E8B57;
+}
+
+.tarjeta p{
+    padding:0 15px 20px;
+}
+
+table{
+    width:90%;
+    margin:auto;
+    border-collapse:collapse;
+}
+
+table th,table td{
+    border:1px solid #999;
+    padding:12px;
+    text-align:center;
+}
+
+table th{
+    background:#2E8B57;
+    color:white;
+}
+
+.curiosidades{
+    width:80%;
+    margin:auto;
+}
+
+.curiosidades li{
+    margin:12px 0;
+}
+
+form{
+    width:60%;
+    margin:auto;
+}
+
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    background:#2E8B57;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#206040;
+}
+
+footer{
+    background:#2E8B57;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+
 </head>
 <body>
 
 <header>
-    <h1>🐾 Mundo Animal</h1>
-    <p>Descubre la belleza y diversidad del reino animal.</p>
+<h1>🌍 Mundo Animal 🦁</h1>
+<p>Descubre la increíble biodiversidad de nuestro planeta.</p>
 </header>
 
 <nav>
-    <a href="#mamiferos">Mamíferos</a>
-    <a href="#aves">Aves</a>
-    <a href="#marinos">Marinos</a>
+<a href="#inicio">Inicio</a>
+<a href="#animales">Animales</a>
+<a href="#tabla">Información</a>
+<a href="#curiosidades">Curiosidades</a>
+<a href="#contacto">Contacto</a>
 </nav>
 
-<section class="hero">
-    <h2>Explora el Reino Animal</h2>
-    <p>Conoce algunas de las especies más fascinantes del planeta.</p>
+<section class="hero" id="inicio">
+<h2>Bienvenido al Reino Animal</h2>
+<p>Más de 8 millones de especies habitan la Tierra.</p>
 </section>
 
-<div class="contenedor">
-    <div class="tarjetas">
+<section id="animales">
 
-        <div class="tarjeta" id="mamiferos">
-            <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=600&q=80" alt="León">
-            <h3>🦁 León</h3>
-            <p>El león es conocido como el rey de la selva por su fuerza, liderazgo y majestuosa melena.</p>
-        </div>
+<h2>Animales Destacados</h2>
 
-        <div class="tarjeta" id="aves">
-            <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=600&q=80" alt="Águila">
-            <h3>🦅 Águila</h3>
-            <p>Las águilas destacan por su extraordinaria visión y su capacidad para volar a grandes alturas.</p>
-        </div>
+<div class="tarjetas">
 
-        <div class="tarjeta" id="marinos">
-            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="Delfín">
-            <h3>🐬 Delfín</h3>
-            <p>Los delfines son mamíferos marinos muy inteligentes y conocidos por su comportamiento social.</p>
-        </div>
-
-    </div>
+<div class="tarjeta">
+<img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=600">
+<h3>🦁 León</h3>
+<p>Conocido como el rey de la selva por su fuerza y liderazgo.</p>
 </div>
 
+<div class="tarjeta">
+<img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=600">
+<h3>🐘 Elefante</h3>
+<p>Es el mamífero terrestre más grande del mundo.</p>
+</div>
+
+<div class="tarjeta">
+<img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=600">
+<h3>🐺 Lobo</h3>
+<p>Animal muy inteligente que vive y caza en manada.</p>
+</div>
+
+<div class="tarjeta">
+<img src="https://images.unsplash.com/photo-1501706362039-c6e80948bb13?w=600">
+<h3>🦅 Águila</h3>
+<p>Posee una vista extraordinaria y puede detectar presas a kilómetros.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="tabla">
+
+<h2>Clasificación de Animales</h2>
+
+<table>
+
+<tr>
+<th>Animal</th>
+<th>Tipo</th>
+<th>Hábitat</th>
+<th>Alimentación</th>
+</tr>
+
+<tr>
+<td>León</td>
+<td>Mamífero</td>
+<td>Sabana</td>
+<td>Carnívoro</td>
+</tr>
+
+<tr>
+<td>Elefante</td>
+<td>Mamífero</td>
+<td>África y Asia</td>
+<td>Herbívoro</td>
+</tr>
+
+<tr>
+<td>Águila</td>
+<td>Ave</td>
+<td>Montañas</td>
+<td>Carnívoro</td>
+</tr>
+
+<tr>
+<td>Lobo</td>
+<td>Mamífero</td>
+<td>Bosques</td>
+<td>Carnívoro</td>
+</tr>
+
+</table>
+
+</section>
+
+<section id="curiosidades">
+
+<h2>📚 Curiosidades</h2>
+
+<ul class="curiosidades">
+<li>🐬 Los delfines tienen nombres propios para identificarse.</li>
+<li>🦒 La jirafa posee el cuello más largo entre los mamíferos.</li>
+<li>🐙 Los pulpos tienen tres corazones.</li>
+<li>🦉 Los búhos pueden girar su cabeza hasta 270°.</li>
+<li>🐧 Los pingüinos forman parejas durante la época reproductiva.</li>
+</ul>
+
+</section>
+
+<section id="contacto">
+
+<h2>Contáctanos</h2>
+
+<form>
+
+<input type="text" placeholder="Nombre">
+
+<input type="email" placeholder="Correo electrónico">
+
+<textarea rows="5" placeholder="Escribe tu mensaje"></textarea>
+
+<button>Enviar</button>
+
+</form>
+
+</section>
+
 <footer>
-    <p>&copy; 2026 Mundo Animal | Proyecto HTML y CSS</p>
+
+<p>© 2026 Mundo Animal | Proyecto realizado con HTML y CSS.</p>
+
 </footer>
 
 </body>
