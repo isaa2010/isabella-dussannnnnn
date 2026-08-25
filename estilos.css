@@ -64,13 +64,11 @@ footer{
       background-color: #f5f5f5;
       padding: 20px;
     }
-
-    /* Estilo café claro para la etiqueta <section> */
- section {
+section {
       max-width: 1100px;
       margin: 40px auto;
       padding: 40px 20px;
-      background-color: #d7c4b7 !important; /* Café claro suave */
+      background-color: #d7c4b7; /* Café claro suave */
       color: #3e2723;                       /* Texto café oscuro para buen contraste */
       border-radius: 12px;
       box-shadow: 0 10px 25px rgba(62, 39, 35, 0.12); /* Sombra con tinte café */
