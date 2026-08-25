@@ -74,5 +74,7 @@ section {
       box-shadow: 0 10px 25px rgba(62, 39, 35, 0.12); /* Sombra con tinte café */
       border: 1px solid #c5b2a4;            /* Borde un tono más oscuro que el fondo */
     }
-
+section {
+    backgound-color:  #d7c4b7;
+}
   
