@@ -60,8 +60,9 @@ section {
   max-width: 1100px;
   margin: 40px auto;
   padding: 40px 20px;
-  background-color: #fdfbf7; /* Beige suave y elegante */
+  background-color: #d7c4b7; /* Café claro suave */
+  color: #3e2723;            /* Texto café oscuro para buen contraste */
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  border: 1px solid #f0ece1; /* Borde beige un poco más oscuro */
+  box-shadow: 0 10px 25px rgba(62, 39, 35, 0.1); /* Sombra con tinte café */
+  border: 1px solid #c5b2a4; /* Borde un tono más oscuro que el fondo */
 }
